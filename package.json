@@ -2,6 +2,11 @@
   "name": "aurelis-project",
   "version": "0.1.0",
   "private": true,
+  "scripts": {
+    "dev": "npm run dev --workspace=client",
+    "build": "npm run build --workspace=client",
+    "start": "npm run start --workspace=client"
+  },
   "workspaces": [
     "client"
   ]

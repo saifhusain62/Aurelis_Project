@@ -1,0 +1,23 @@
+# dependencies
+node_modules/
+client/node_modules/
+.pnp
+.pnp.*
+
+# next.js build output
+.next/
+client/.next/
+out/
+client/out/
+
+# sub-projects / local tools
+caveman/
+
+# vercel & environment
+.env*
+.vercel
+
+# system
+.DS_Store
+*.pem
+*.tsbuildinfo
