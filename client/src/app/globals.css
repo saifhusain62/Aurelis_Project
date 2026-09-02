@@ -1,0 +1,46 @@
+@import "tailwindcss";
+
+:root {
+  --background: #09130d;
+  --foreground: #f4f7f4;
+  --lime-accent: #c6f135;
+  --lime-hover: #b4df27;
+  --dark-brand: #0f2619;
+}
+
+body {
+  background-color: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-sans), system-ui, -apple-system, sans-serif;
+  overflow-x: hidden;
+}
+
+/* Custom Glassmorphism styles */
+.glass-card {
+  background: rgba(18, 30, 22, 0.45);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+}
+
+.glass-card-hover {
+  transition: all 0.3s ease;
+}
+
+.glass-card-hover:hover {
+  background: rgba(22, 38, 28, 0.6);
+  border-color: rgba(255, 255, 255, 0.3);
+}
+
+/* Custom scrollbar for Lenis smooth scroll compatibility */
+html.lenis, html.lenis body {
+  height: auto;
+}
+
+.lenis.lenis-smooth {
+  scroll-behavior: auto !important;
+}
+
+.lenis.lenis-stopped {
+  overflow: hidden;
+}

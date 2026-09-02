@@ -19,13 +19,16 @@
       }
     ],
     "paths": {
-      "@/*": ["./client/src/*"]
+      "@/*": ["./src/*"]
     }
   },
   "include": [
-    "client/**/*.ts",
-    "client/**/*.tsx",
-    "client/.next/types/**/*.ts"
+    "next-env.d.ts",
+    "**/*.ts",
+    "**/*.tsx",
+    ".next/types/**/*.ts",
+    ".next/dev/types/**/*.ts",
+    "**/*.mts"
   ],
-  "exclude": ["node_modules", "client/node_modules"]
+  "exclude": ["node_modules"]
 }
