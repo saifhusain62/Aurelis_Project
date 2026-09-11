@@ -4,6 +4,7 @@ import AboutClubSection from "@/components/AboutClubSection";
 import CourseShowcaseSection from "@/components/CourseShowcaseSection";
 import MembershipSection from "@/components/MembershipSection";
 import TestimonialReviewsSection from "@/components/TestimonialReviewsSection";
+import ClubBeginsSection from "@/components/ClubBeginsSection";
 
 export default function Home() {
   return (
@@ -14,6 +15,8 @@ export default function Home() {
       <CourseShowcaseSection />
       <MembershipSection />
       <TestimonialReviewsSection />
+      <ClubBeginsSection />
     </main>
   );
 }
+
