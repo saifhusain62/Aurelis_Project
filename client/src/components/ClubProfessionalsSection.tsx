@@ -46,11 +46,11 @@ const professionals: Professional[] = [
 
 export default function ClubProfessionalsSection() {
   return (
-    <section className="w-full bg-[#F6F4ED] text-[#122718] py-20 sm:py-28 lg:py-32 px-6 lg:px-16 overflow-hidden">
+    <section className="w-full bg-[#F6F4ED] text-[#122718] py-16 sm:py-24 lg:py-32 px-4 sm:px-6 lg:px-16 overflow-hidden">
       <div className="max-w-[1650px] mx-auto">
 
         {/* Header Block */}
-        <div className="mb-12 sm:mb-16 lg:mb-20">
+        <div className="mb-10 sm:mb-16 lg:mb-20">
           {/* Badge */}
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -82,7 +82,7 @@ export default function ClubProfessionalsSection() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.7, delay: 0.1 }}
-              className="font-sans text-4xl sm:text-5xl lg:text-[58px] font-semibold tracking-tight leading-[1.08] text-[#122718]"
+              className="font-sans text-3xl sm:text-5xl lg:text-[58px] font-semibold tracking-tight leading-[1.1] sm:leading-[1.08] text-[#122718]"
             >
               Meet our professionals.
             </motion.h2>

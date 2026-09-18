@@ -10,6 +10,7 @@ import CourseShowcaseSection from "@/components/CourseShowcaseSection";
 import MembershipSection from "@/components/MembershipSection";
 import TestimonialReviewsSection from "@/components/TestimonialReviewsSection";
 import ClubBeginsSection from "@/components/ClubBeginsSection";
+import Footer from "@/components/Footer";
 
 export default function Home() {
   return (
@@ -26,6 +27,7 @@ export default function Home() {
       <ClubProfessionalsSection />
       <NextRoundCTASection />
       <ClubCalendarSection />
+      <Footer />
     </main>
   );
 }

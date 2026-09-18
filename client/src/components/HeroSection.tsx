@@ -8,7 +8,7 @@ import { FiArrowRight, FiArrowUpRight } from 'react-icons/fi';
 
 export default function HeroSection() {
   return (
-    <section className="relative min-h-screen w-full flex flex-col justify-between pt-36 pb-12 px-6 lg:px-16 overflow-hidden bg-[#09130d]">
+    <section className="relative min-h-screen w-full flex flex-col justify-between pt-28 sm:pt-36 pb-12 px-4 sm:px-6 lg:px-16 overflow-hidden bg-[#09130d]">
       {/* Background Hero Image with smooth fade & subtle zoom */}
       <motion.div
         initial={{ scale: 1.12, opacity: 0 }}
@@ -27,7 +27,7 @@ export default function HeroSection() {
       </motion.div>
 
       {/* Main Content Area */}
-      <div className="relative z-20 max-w-[1650px] mx-auto w-full my-auto flex flex-col lg:flex-row lg:items-end justify-between gap-12 pt-8">
+      <div className="relative z-20 max-w-[1650px] mx-auto w-full my-auto flex flex-col lg:flex-row lg:items-end justify-between gap-10 lg:gap-12 pt-6 sm:pt-8">
 
         {/* Left Side: Typography & Main CTAs */}
         <div className="max-w-2xl flex flex-col gap-6 sm:gap-8">
@@ -37,12 +37,12 @@ export default function HeroSection() {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.7, delay: 0.2 }}
-            className="flex items-center gap-2"
+            className="flex items-center gap-2 flex-wrap"
           >
             {/* Small emblem circle */}
             <motion.div
               whileHover={{ rotate: 15, scale: 1.1 }}
-              className="w-8 h-8 rounded-full bg-[#c6f135] p-1.5 flex items-center justify-center shadow-md cursor-pointer overflow-hidden"
+              className="w-8 h-8 rounded-full bg-[#c6f135] p-1.5 flex items-center justify-center shadow-md cursor-pointer overflow-hidden shrink-0"
             >
               <Image
                 src="/logo.svg"
@@ -54,7 +54,7 @@ export default function HeroSection() {
             </motion.div>
 
             {/* EST. Pill Badge */}
-            <div className="bg-[#c6f135] text-[#0f2619] px-4 py-1.5 rounded-full text-xs font-extrabold tracking-wider uppercase shadow-md">
+            <div className="bg-[#c6f135] text-[#0f2619] px-3.5 sm:px-4 py-1.5 rounded-full text-[10px] sm:text-xs font-extrabold tracking-wider uppercase shadow-md">
               PRIVATE MEMBERS CLUB · EST. 1968
             </div>
           </motion.div>
@@ -62,7 +62,7 @@ export default function HeroSection() {
           {/* Heading with staggered text reveal */}
           <h1 
             style={{ fontFamily: 'var(--font-serif)' }} 
-            className="text-5xl sm:text-7xl lg:text-[5.4rem] leading-[0.98] tracking-tight text-white font-normal drop-shadow-lg"
+            className="text-[38px] sm:text-7xl lg:text-[5.4rem] leading-[1.02] sm:leading-[0.98] tracking-tight text-white font-normal drop-shadow-lg"
           >
             <motion.span
               initial={{ opacity: 0, y: 35 }}

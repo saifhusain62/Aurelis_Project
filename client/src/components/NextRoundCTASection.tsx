@@ -14,7 +14,7 @@ export default function NextRoundCTASection({
   backgroundImage = '/community.png',
 }: NextRoundCTASectionProps) {
   return (
-    <section className="relative w-full min-h-[600px] sm:min-h-[660px] lg:min-h-[720px] bg-[#0c1811] text-white flex items-center overflow-hidden px-6 lg:px-16 py-20 sm:py-28 lg:py-32">
+    <section className="relative w-full min-h-[520px] sm:min-h-[660px] lg:min-h-[720px] bg-[#0c1811] text-white flex items-center overflow-hidden px-4 sm:px-6 lg:px-16 py-16 sm:py-24 lg:py-32">
 
       {/* Background Image Container */}
       <div className="absolute inset-0 z-0">
@@ -55,7 +55,7 @@ export default function NextRoundCTASection({
             viewport={{ once: true }}
             transition={{ duration: 0.8, delay: 0.15 }}
             style={{ fontFamily: 'var(--font-serif)' }}
-            className="italic text-4xl sm:text-5xl lg:text-[60px] xl:text-[68px] leading-[1.04] text-white font-normal tracking-tight mb-10 sm:mb-14"
+            className="italic text-3xl sm:text-5xl lg:text-[60px] xl:text-[68px] leading-[1.08] sm:leading-[1.04] text-white font-normal tracking-tight mb-8 sm:mb-14"
           >
             <span className="block">The best rounds</span>
             <span className="block">are rarely rushed.</span>
@@ -67,7 +67,7 @@ export default function NextRoundCTASection({
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.7, delay: 0.3 }}
-            className="font-sans text-2xl sm:text-3xl lg:text-[40px] font-semibold text-white tracking-tight mb-6 sm:mb-7"
+            className="font-sans text-xl sm:text-3xl lg:text-[40px] font-semibold text-white tracking-tight mb-5 sm:mb-7"
           >
             Ready for your next round?
           </motion.h3>

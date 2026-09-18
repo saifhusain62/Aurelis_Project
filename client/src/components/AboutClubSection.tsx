@@ -8,11 +8,11 @@ import { FiArrowRight, FiArrowUpRight } from 'react-icons/fi';
 
 export default function AboutClubSection() {
   return (
-    <section className="w-full bg-[#F7F5EE] text-[#122718] py-24 sm:py-32 px-6 lg:px-16 overflow-hidden">
+    <section className="w-full bg-[#F7F5EE] text-[#122718] py-16 sm:py-24 lg:py-32 px-4 sm:px-6 lg:px-16 overflow-hidden">
       <div className="max-w-[1650px] mx-auto">
 
         {/* Top Header Grid */}
-        <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-start mb-16 sm:mb-24">
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-start mb-12 sm:mb-20 lg:mb-24">
 
           {/* Left Title Area */}
           <motion.div
@@ -24,7 +24,7 @@ export default function AboutClubSection() {
           >
             {/* Tag Badge */}
             <div className="flex items-center gap-2 mb-6">
-              <div className="w-8 h-8 rounded-full border border-[#D5D0C1] p-1.5 flex items-center justify-center bg-white/50">
+              <div className="w-8 h-8 rounded-full border border-[#D5D0C1] p-1.5 flex items-center justify-center bg-white/50 shadow-sm">
                 <Image
                   src="/logo.svg"
                   alt="Aurelis Logo"
@@ -39,7 +39,7 @@ export default function AboutClubSection() {
             </div>
 
             {/* Main Headline */}
-            <h2 className="font-sans text-5xl sm:text-[58px] lg:text-[58px] font-semibold tracking-tight leading-[1.05] text-[#122718]">
+            <h2 className="font-sans text-3xl sm:text-5xl lg:text-[58px] font-semibold tracking-tight leading-[1.1] sm:leading-[1.05] text-[#122718]">
               <span className="block">More than a course.</span>
               <span className="block">A place to belong.</span>
             </h2>
@@ -51,9 +51,9 @@ export default function AboutClubSection() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.8, delay: 0.2 }}
-            className="lg:col-span-4 lg:text-right lg:pt-8 flex justify-end"
+            className="lg:col-span-4 lg:text-right lg:pt-8 flex justify-start lg:justify-end"
           >
-            <p className="text-[#4A5E50] text-base sm:text-lg leading-relaxed max-w-[490px] text-right ml-auto">
+            <p className="text-[#4A5E50] text-base sm:text-lg leading-relaxed max-w-[490px] text-left lg:text-right ml-0 lg:ml-auto">
               Aurelis brings together championship golf, thoughtful hospitality and a private community. Shaped for those who value quiet distinction over spectacle, sustained since 1968.
             </p>
           </motion.div>

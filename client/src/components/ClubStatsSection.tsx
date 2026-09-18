@@ -68,7 +68,7 @@ function AnimatedCounter({ target, duration = 2 }: { target: number; duration?: 
 
 export default function ClubStatsSection() {
   return (
-    <section className="w-full bg-[#0d2217] text-white h-auto lg:h-[248px] py-14 lg:py-0 px-6 lg:px-16 flex items-center overflow-hidden border-t border-[#1a3826]">
+    <section className="w-full bg-[#0d2217] text-white h-auto lg:h-[248px] py-12 sm:py-14 lg:py-0 px-4 sm:px-6 lg:px-16 flex items-center overflow-hidden border-t border-[#1a3826]">
       <div className="max-w-[1650px] w-full mx-auto">
         <div className="grid grid-cols-2 lg:grid-cols-4 gap-y-10 lg:gap-y-0 relative items-center">
           {stats.map((stat, index) => (
@@ -78,10 +78,10 @@ export default function ClubStatsSection() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.6, delay: index * 0.1 }}
-              className="relative flex flex-col items-center justify-center text-center px-4 sm:px-6"
+              className="relative flex flex-col items-center justify-center text-center px-2 sm:px-6"
             >
               {/* Counter Number */}
-              <div className="font-serif text-[54px] sm:text-7xl lg:text-[80px] xl:text-[88px] font-normal text-[#cbf23a] leading-none tracking-tight mb-2.5 select-none">
+              <div className="font-serif text-5xl sm:text-7xl lg:text-[80px] xl:text-[88px] font-normal text-[#cbf23a] leading-none tracking-tight mb-2 sm:mb-2.5 select-none">
                 <AnimatedCounter target={stat.value} duration={2} />
               </div>
 

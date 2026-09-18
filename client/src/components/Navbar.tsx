@@ -85,8 +85,8 @@ export default function Navbar() {
             <span className="tracking-tight">+1 (214) 555-0142</span>
           </motion.a>
 
-          {/* Book Tee Time Button */}
-          <motion.div whileHover={{ scale: 1.04 }} whileTap={{ scale: 0.96 }}>
+          {/* Book Tee Time Button - Hidden on mobile, shown on sm and up */}
+          <motion.div className="hidden sm:block" whileHover={{ scale: 1.04 }} whileTap={{ scale: 0.96 }}>
             <Link
               href="/book"
               className="bg-[#0f2619] hover:bg-[#183a27] text-white px-4 sm:px-5 py-2.5 rounded-full text-xs sm:text-sm font-medium flex items-center gap-2.5 transition-all shadow-md hover:shadow-lg"
@@ -155,9 +155,19 @@ export default function Navbar() {
               Events
             </Link>
 
+            {/* Mobile Menu Book a Tee Time Button */}
+            <Link
+              href="/book"
+              onClick={() => setMobileMenuOpen(false)}
+              className="bg-[#0f2619] text-white py-3 px-5 rounded-full text-sm font-semibold flex items-center justify-center gap-2.5 shadow-md mt-2"
+            >
+              <span className="w-2 h-2 rounded-full bg-[#c6f135] shadow-[0_0_8px_#c6f135]" />
+              Book a Tee Time
+            </Link>
+
             <a
               href="tel:+12145550142"
-              className="flex items-center gap-3 pt-2 text-sm font-semibold text-slate-900"
+              className="flex items-center gap-3 pt-1 text-sm font-semibold text-slate-900"
             >
               <div className="w-8 h-8 rounded-full bg-[#c6f135] text-[#0f2619] flex items-center justify-center">
                 <FiPhone className="w-4 h-4" />

@@ -8,11 +8,11 @@ import { FiArrowRight } from 'react-icons/fi';
 
 export default function CourseShowcaseSection() {
   return (
-    <section className="w-full bg-[#E5ECE3] text-[#122718] py-24 sm:py-32 px-6 lg:px-16 overflow-hidden">
+    <section className="w-full bg-[#E5ECE3] text-[#122718] py-16 sm:py-24 lg:py-32 px-4 sm:px-6 lg:px-16 overflow-hidden">
       <div className="max-w-[1650px] mx-auto">
 
         {/* Top Header Row */}
-        <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-start mb-14 sm:mb-20">
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-start mb-12 sm:mb-16 lg:mb-20">
 
           {/* Left Title Area */}
           <motion.div
@@ -39,7 +39,7 @@ export default function CourseShowcaseSection() {
             </div>
 
             {/* Main Headline */}
-            <h2 className="font-sans text-5xl sm:text-[58px] lg:text-[62px] font-semibold tracking-tight leading-[1.06] text-[#122718]">
+            <h2 className="font-sans text-3xl sm:text-5xl lg:text-[62px] font-semibold tracking-tight leading-[1.1] sm:leading-[1.06] text-[#122718]">
               <span className="block">Designed to challenge.</span>
               <span className="block">Made to be remembered.</span>
             </h2>

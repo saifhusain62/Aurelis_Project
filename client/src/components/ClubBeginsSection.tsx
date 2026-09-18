@@ -14,7 +14,7 @@ export default function ClubBeginsSection({
   backgroundImage = '/beginimg.png',
 }: ClubBeginsSectionProps) {
   return (
-    <section className="relative w-full min-h-[580px] sm:min-h-[640px] lg:min-h-[720px] bg-[#0c1f15] text-white flex items-center overflow-hidden px-6 lg:px-16 py-20 sm:py-28">
+    <section className="relative w-full min-h-[520px] sm:min-h-[640px] lg:min-h-[720px] bg-[#0c1f15] text-white flex items-center overflow-hidden px-4 sm:px-6 lg:px-16 py-16 sm:py-24 lg:py-28">
 
       {/* Background Image Container */}
       <div className="absolute inset-0 z-0">
@@ -47,7 +47,7 @@ export default function ClubBeginsSection({
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.7 }}
-            className="flex items-center gap-2.5 mb-8 sm:mb-10"
+            className="flex items-center gap-2.5 mb-6 sm:mb-10"
           >
             {/* Emblem Circle */}
             <div className="w-8 h-8 sm:w-9 sm:h-9 rounded-full border border-[#4d6a54] bg-[#142d1f]/70 backdrop-blur-md p-2 flex items-center justify-center shadow-md">
@@ -72,7 +72,7 @@ export default function ClubBeginsSection({
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.8, delay: 0.15 }}
-            className="text-4xl sm:text-5xl lg:text-[64px] font-semibold text-white tracking-tight leading-[1.08] mb-6"
+            className="text-3xl sm:text-5xl lg:text-[64px] font-semibold text-white tracking-tight leading-[1.1] sm:leading-[1.08] mb-5 sm:mb-6"
           >
             <span className="block">Your place at the</span>
             <span className="block">club begins here.</span>

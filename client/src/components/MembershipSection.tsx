@@ -31,7 +31,7 @@ const membershipFeatures = [
 
 export default function MembershipSection() {
   return (
-    <section className="w-full bg-[#F6F5EE] text-[#122718] py-24 sm:py-32 px-6 lg:px-16 overflow-hidden">
+    <section className="w-full bg-[#F6F5EE] text-[#122718] py-16 sm:py-24 lg:py-32 px-4 sm:px-6 lg:px-16 overflow-hidden">
       <div className="max-w-[1650px] mx-auto">
         
         {/* Top Header Row */}
@@ -40,7 +40,7 @@ export default function MembershipSection() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.8 }}
-          className="flex flex-col items-start mb-12 sm:mb-16"
+          className="flex flex-col items-start mb-10 sm:mb-16"
         >
           {/* Tag Badge */}
           <div className="flex items-center gap-2 mb-6">
@@ -59,7 +59,7 @@ export default function MembershipSection() {
           </div>
 
           {/* Main Headline */}
-          <h2 className="font-sans text-5xl sm:text-[58px] lg:text-[62px] font-semibold tracking-tight leading-[1.06] text-[#122718] mb-5">
+          <h2 className="font-sans text-3xl sm:text-5xl lg:text-[62px] font-semibold tracking-tight leading-[1.1] sm:leading-[1.06] text-[#122718] mb-4 sm:mb-5">
             <span className="block">Membership, without</span>
             <span className="block">compromise.</span>
           </h2>

@@ -45,11 +45,11 @@ export default function TestimonialReviewsSection() {
   const current = testimonials[currentIndex];
 
   return (
-    <section className="w-full bg-[#F5F4EC] text-[#122718] py-24 sm:py-32 px-6 lg:px-16 overflow-hidden">
+    <section className="w-full bg-[#F5F4EC] text-[#122718] py-16 sm:py-24 lg:py-32 px-4 sm:px-6 lg:px-16 overflow-hidden">
       <div className="max-w-[1650px] mx-auto">
 
         {/* Top Header Row with Tilted Photo Badge */}
-        <div className="flex flex-col lg:flex-row lg:items-center lg:justify-between gap-8 mb-16 sm:mb-20">
+        <div className="flex flex-col lg:flex-row lg:items-center lg:justify-between gap-8 mb-12 sm:mb-20">
 
           {/* Left Title Area */}
           <motion.div
@@ -76,7 +76,7 @@ export default function TestimonialReviewsSection() {
             </div>
 
             {/* Main Headline */}
-            <h2 className="font-sans text-5xl sm:text-[58px] lg:text-[62px] font-semibold tracking-tight leading-[1.06] text-[#122718]">
+            <h2 className="font-sans text-3xl sm:text-5xl lg:text-[62px] font-semibold tracking-tight leading-[1.1] sm:leading-[1.06] text-[#122718]">
               <span className="block">What our members</span>
               <span className="block">say about Aurelis.</span>
             </h2>
