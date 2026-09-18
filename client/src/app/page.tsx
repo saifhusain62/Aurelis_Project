@@ -2,6 +2,10 @@ import Navbar from "@/components/Navbar";
 import HeroSection from "@/components/HeroSection";
 import AboutClubSection from "@/components/AboutClubSection";
 import BeyondFairwaySection from "@/components/BeyondFairwaySection";
+import ClubStatsSection from "@/components/ClubStatsSection";
+import ClubProfessionalsSection from "@/components/ClubProfessionalsSection";
+import NextRoundCTASection from "@/components/NextRoundCTASection";
+import ClubCalendarSection from "@/components/ClubCalendarSection";
 import CourseShowcaseSection from "@/components/CourseShowcaseSection";
 import MembershipSection from "@/components/MembershipSection";
 import TestimonialReviewsSection from "@/components/TestimonialReviewsSection";
@@ -18,6 +22,10 @@ export default function Home() {
       <TestimonialReviewsSection />
       <ClubBeginsSection />
       <BeyondFairwaySection />
+      <ClubStatsSection />
+      <ClubProfessionalsSection />
+      <NextRoundCTASection />
+      <ClubCalendarSection />
     </main>
   );
 }
