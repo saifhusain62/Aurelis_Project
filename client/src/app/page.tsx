@@ -1,6 +1,7 @@
 import Navbar from "@/components/Navbar";
 import HeroSection from "@/components/HeroSection";
 import AboutClubSection from "@/components/AboutClubSection";
+import BeyondFairwaySection from "@/components/BeyondFairwaySection";
 import CourseShowcaseSection from "@/components/CourseShowcaseSection";
 import MembershipSection from "@/components/MembershipSection";
 import TestimonialReviewsSection from "@/components/TestimonialReviewsSection";
@@ -16,6 +17,7 @@ export default function Home() {
       <MembershipSection />
       <TestimonialReviewsSection />
       <ClubBeginsSection />
+      <BeyondFairwaySection />
     </main>
   );
 }
